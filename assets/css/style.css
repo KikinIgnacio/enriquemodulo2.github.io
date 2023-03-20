@@ -1,0 +1,218 @@
+/* line 9, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+body {
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  /* line 14, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .container-portafolio {
+    display: grid;
+    grid-template-areas: "header header" "menu menu" "main main" "footer footer";
+    height: 100%;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  /* line 21, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: lightcoral;
+  }
+  /* line 28, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .header .box-banner1 img {
+    width: 5rem;
+    padding-top: 1rem;
+  }
+  /* line 33, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .header .box-banner3 img {
+    width: 5rem;
+    padding-top: 1rem;
+  }
+  /* line 38, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .header .header h2,
+  .header p {
+    font-family: "Pacifico", cursive;
+  }
+  /* line 44, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .menu {
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  /* line 53, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .menu .desafio-icon {
+    display: flex;
+    align-items: center;
+  }
+  /* line 58, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .menu .desafio-icon h1 {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  /* line 66, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .main {
+    grid-area: main;
+  }
+  /* line 69, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .main .desafios-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 3rem;
+    column-gap: 3rem;
+  }
+  /* line 76, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .main .box-titulo {
+    margin: 0;
+  }
+  /* line 81, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .main .box-texto {
+    margin: 0;
+  }
+  /* line 85, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .main .desafio-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 91, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .main .desafio-box img {
+    border-radius: 20%;
+  }
+  /* line 95, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .main .main p {
+    font-family: "Pacifico", cursive;
+  }
+  /* line 101, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .footer {
+    grid-area: footer;
+    max-width: 100%;
+  }
+  /* line 105, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .footer .container-footer {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 115, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .footer .fotter p {
+    font-family: "Pacifico", cursive;
+  }
+}
+
+@media (min-width: 576px) {
+  /* line 123, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .container-portafolio {
+    display: grid;
+    grid-template-areas: "header header" "menu main" "footer footer";
+    height: 100%;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+  }
+  /* line 132, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: lightcoral;
+  }
+  /* line 139, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .header .box-banner1 img {
+    width: 5rem;
+    padding-top: 1rem;
+  }
+  /* line 144, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .header .box-banner3 img {
+    width: 5rem;
+    padding-top: 1rem;
+  }
+  /* line 149, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .header .header h2,
+  .header p {
+    font-family: "Pacifico", cursive;
+  }
+  /* line 156, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .titulo {
+    text-align: center;
+  }
+  /* line 160, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .menu {
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  /* line 169, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .menu .desafio-icon {
+    display: flex;
+    align-items: center;
+  }
+  /* line 174, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .menu .desafio-icon h1 {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  /* line 182, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .main {
+    grid-area: main;
+  }
+  /* line 185, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .main .desafios-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 3rem;
+    column-gap: 3rem;
+  }
+  /* line 192, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .main .box-titulo {
+    margin: 0;
+  }
+  /* line 197, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .main .box-texto {
+    margin: 0;
+  }
+  /* line 201, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .main .desafio-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 207, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .main .desafio-box img {
+    border-radius: 20%;
+  }
+  /* line 211, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .main .main p {
+    font-family: "Pacifico", cursive;
+  }
+  /* line 217, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .footer {
+    grid-area: footer;
+  }
+  /* line 220, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .footer .container-footer {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffacd;
+  }
+  /* line 229, ../../../Desktop/Portafolio-Modulo2/assets/scss/style.scss */
+  .footer .fotter p {
+    font-family: "Pacifico", cursive;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

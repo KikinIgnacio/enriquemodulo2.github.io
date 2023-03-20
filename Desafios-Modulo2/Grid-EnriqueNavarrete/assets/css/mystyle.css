@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+}
+
+.ecommerce {
+    display: grid;
+    grid-template-areas: 'header header' 'main menu' 'footer footer';
+    height: 100%;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+}
+
+.header {
+    grid-area: header;
+    background-color: lightsteelblue;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header img {
+    width: 5%;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    margin-right: 10px;
+    padding-left: 300px;
+    font-family: 'Rampart One', cursive;
+}
+
+
+
+.main {
+    grid-area: main;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.footer {
+    grid-area: footer;
+    height: 100%;
+    display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.celulares-img {
+    width: 300px;
+    height: 300px;
+}
+
+.equipos {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+.lista-productos {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+
+}
+
+.lista-productos p{
+    text-decoration: underline;
+    color: steelblue;
+    font-family: 'Rampart One', cursive;
+}
+
+.lista-productos h3{
+    font-family: 'Rampart One', cursive;
+}
+
+.contenedor-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton p {
+    background-color: lightskyblue;
+    margin: 0;
+    font-family: 'Rampart One', cursive;
+}
+
+.informacion {
+    margin: 0;
+}
+
+.precio {
+    margin: 0;
+}
+
+.footer .logos div {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+  }
+  
+  .footer .logos img {
+    margin-right: 10px;
+    width: 3%;
+  }
+  
+  .footer .logos p {
+    margin: 0;
+    font-family: 'Rampart One', cursive;
+  }
+  .texto-footer{
+    padding-left: 50px;
+  }
+  
+  .logos {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .seccion-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 150px;
+  }
+
+  .seccion-enviar h2{
+    font-family: 'Rampart One', cursive;
+  }
+ 
+
+  

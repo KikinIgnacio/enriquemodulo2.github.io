@@ -1,0 +1,46 @@
+/* line 13, ../../../Desktop/SASS-EnriqueNavarrete/assets/scss/style.scss */
+.contenedor-cardsass {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+/* line 20, ../../../Desktop/SASS-EnriqueNavarrete/assets/scss/style.scss */
+.card-title, .card-body h5, .card-body .a {
+  font-family: "Lobster", cursive;
+}
+
+/* line 24, ../../../Desktop/SASS-EnriqueNavarrete/assets/scss/style.scss */
+.card-text, .card-body p {
+  font-family: "Lobster", cursive;
+}
+
+/* line 29, ../../../Desktop/SASS-EnriqueNavarrete/assets/scss/style.scss */
+.card-body h5 {
+  font-size: 2rem;
+  color: #cf649a;
+}
+
+/* line 35, ../../../Desktop/SASS-EnriqueNavarrete/assets/scss/style.scss */
+.card-body p {
+  font-size: 1rem;
+  color: white;
+}
+
+/* line 42, ../../../Desktop/SASS-EnriqueNavarrete/assets/scss/style.scss */
+.card-body .a {
+  border: #cf649a 1px solid;
+}
+
+/* line 50, ../../../Desktop/SASS-EnriqueNavarrete/assets/scss/style.scss */
+.sass-card {
+  background-color: #212529;
+}
+
+/* line 54, ../../../Desktop/SASS-EnriqueNavarrete/assets/scss/style.scss */
+.btn-primary {
+  background-color: #cf649a;
+  border: #cf649a 1px solid;
+}
+
+/*# sourceMappingURL=style.css.map */

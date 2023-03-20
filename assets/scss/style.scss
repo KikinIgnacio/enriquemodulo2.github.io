@@ -1,0 +1,233 @@
+$widthIconos: 5rem;
+$colorBackground: lightcoral;
+$paddingtopImg: 1rem;
+$marginOpadding: 0;
+$colorBackground2: #fffacd;
+$fuenteheader: 'Pacifico', cursive;
+
+
+body {
+    margin: 0;
+}
+//mobile//
+@media (max-width: 575px){
+    .container-portafolio {
+        display: grid;
+        grid-template-areas: "header header" "menu menu" "main main" "footer footer";
+        height: 100%;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+    .header {
+        grid-area: header;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        background-color: $colorBackground;
+
+        .box-banner1 img {
+            width: $widthIconos;
+            padding-top: $paddingtopImg;
+        }
+
+        .box-banner3 img {
+            width: $widthIconos;
+            padding-top: $paddingtopImg;
+        }
+
+        .header h2,
+        p {
+            font-family: $fuenteheader;
+        }
+
+    }
+    .menu {
+        grid-area: menu;
+        display: flex;
+        justify-content: center;
+        align-self: flex-start;
+        flex-direction: column;
+        align-items: center;
+        padding: $marginOpadding;
+
+        .desafio-icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .desafio-icon h1 {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+
+    }
+
+    .main {
+        grid-area: main;
+
+        .desafios-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 3rem;
+            column-gap: 3rem;
+        }
+
+        .box-titulo {
+            margin: $marginOpadding;
+
+        }
+
+        .box-texto {
+            margin: $marginOpadding;
+        }
+
+        .desafio-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .desafio-box img {
+            border-radius: 20%;
+        }
+
+        .main p {
+            font-family: $fuenteheader;
+        }
+
+    }
+
+    .footer {
+        grid-area: footer;
+        max-width: 100%;
+
+        .container-footer {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            flex-direction: column;
+            align-items: center;
+            
+        
+        }
+
+        .fotter p {
+            font-family: $fuenteheader;
+        }
+    }
+}
+//escritorio//
+@media (min-width: 576px) {
+
+    .container-portafolio {
+        display: grid;
+        grid-template-areas: "header header" "menu main" "footer footer";
+        height: 100%;
+        grid-template-columns: 1fr 4fr;
+        gap: 10px;
+    }
+
+
+    .header {
+        grid-area: header;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        background-color: $colorBackground;
+
+        .box-banner1 img {
+            width: $widthIconos;
+            padding-top: $paddingtopImg;
+        }
+
+        .box-banner3 img {
+            width: $widthIconos;
+            padding-top: $paddingtopImg;
+        }
+
+        .header h2,
+        p {
+            font-family: $fuenteheader;
+        }
+
+    }
+
+    .titulo {
+        text-align: center;
+    }
+
+    .menu {
+        grid-area: menu;
+        display: flex;
+        justify-content: center;
+        align-self: flex-start;
+        flex-direction: column;
+        align-items: center;
+        padding: $marginOpadding;
+
+        .desafio-icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .desafio-icon h1 {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+
+    }
+
+    .main {
+        grid-area: main;
+
+        .desafios-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            row-gap: 3rem;
+            column-gap: 3rem;
+        }
+
+        .box-titulo {
+            margin: $marginOpadding;
+
+        }
+
+        .box-texto {
+            margin: $marginOpadding;
+        }
+
+        .desafio-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .desafio-box img {
+            border-radius: 20%;
+        }
+
+        .main p {
+            font-family: $fuenteheader;
+        }
+
+    }
+
+    .footer {
+        grid-area: footer;
+
+        .container-footer {
+            display: flex;
+            justify-content: center;
+            align-self: flex-start;
+            flex-direction: column;
+            align-items: center;
+            background-color: $colorBackground2;
+        }
+
+        .fotter p {
+            font-family: $fuenteheader;
+        }
+    }
+}

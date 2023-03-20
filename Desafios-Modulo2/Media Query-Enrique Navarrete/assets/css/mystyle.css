@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* mobile*/
+@media (max-width: 575px) {
+    .tienda-online {
+        display: grid;
+        grid-template-areas: "header header" "main main" "menu menu" "footer footer";
+        grid-template-columns: auto
+    }
+
+    .main {
+        grid-area: header;
+        height: 50px;
+        background-color: darkseagreen;
+    }
+
+    .main h2,
+    p {
+        font-family: 'Pacifico', cursive;
+    }
+
+    .barra-seleccionadora {
+        width: 150px;
+        height: 25px;
+    }
+
+    .barra-padre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header {
+        grid-area: main;
+        height: 70px;
+        background-color: gray;
+    }
+
+    .header h2,
+    option {
+        font-family: 'Pacifico', cursive;
+    }
+
+    .main h2 {
+        padding-right: 20px;
+    }
+
+    .main i{
+        padding-right: 30px;
+        padding-bottom: 10px;
+    }
+
+    .main p {
+        display: none;
+    }
+
+    .lista-menu {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+    }
+
+    .lista-menu img {
+        display: none;
+    }
+
+    .menu {
+        grid-area: menu;
+        height: auto;
+        width: 100%;
+        background-color: khaki;
+    }
+
+    .animales {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .fotos-animales img {
+        width: 30%;
+        padding-top: 40px;
+        border-radius: 100%;
+
+    }
+
+    .footer {
+        grid-area: footer;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        background-color: thistle;
+
+    }
+
+    .footer img {
+        width: 25px;
+        height: 25px;
+
+    }
+
+
+
+}
+
+/* escritorio*/
+@media (min-width: 576px) {
+    .tienda-online {
+        display: grid;
+        grid-template-areas: "header header" "main menu" "footer footer";
+        grid-template-columns: 1fr 4fr;
+
+    }
+
+    .header {
+        grid-area: header;
+        height: 130px;
+        background-color: darkseagreen;
+    }
+
+
+    .header h2,
+    option {
+        font-family: 'Pacifico', cursive;
+    }
+
+    .barra-seleccionadora {
+        width: 400px;
+        height: 25px;
+        padding: 10px;
+    }
+
+    .barra-padre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .main {
+        grid-area: main;
+        height: 100%;
+
+    }
+
+    .main h2,
+    p {
+        font-family: 'Pacifico', cursive;
+    }
+
+    .main img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .lista-menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sub-main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lista-menu i {
+        display: none;
+    }
+
+
+    .menu {
+        grid-area: menu;
+        height: 1200px;
+        padding-top: 50px;
+
+    }
+
+    .animales {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .fotos-animales img {
+        width: auto;
+        border-radius: 100%;
+
+    }
+
+    .fotos-animales {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 3fr);
+
+    }
+
+
+
+    .footer {
+        grid-area: footer;
+        height: 150px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: darkseagreen;
+
+    }
+
+    .footer img {
+        width: 70px;
+        height: 70px;
+        padding-left: 10px;
+    }
+
+    .texto-redessociales {
+        padding-left: 50px;
+    }
+
+    .encuentranos {
+        padding-left: 40px;
+    }
+
+    .logodelatienda img {
+        width: 100px;
+        height: 100px;
+    }
+
+}

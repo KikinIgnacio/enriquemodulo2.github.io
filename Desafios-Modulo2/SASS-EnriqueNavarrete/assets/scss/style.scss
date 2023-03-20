@@ -1,0 +1,66 @@
+@import "./variables.scss";
+
+$marginTop: 5rem;
+$textoXL: 2rem;
+$textoL: 1rem;
+$textoFuente: 'Lobster', cursive;
+$fondoTarjeta: #212529;
+$purple: #cf649a;
+$bordeBoton: #cf649a 1px solid;
+$colorletraL: white;
+
+
+.contenedor-cardsass {
+    display: flex;
+    justify-content: center;
+    margin-top: $marginTop;
+
+}
+
+.card-title {
+    font-family: $textoFuente;
+}
+
+.card-text {
+    font-family: $textoFuente;
+}
+
+.card-body {
+    h5 {
+        font-size: $textoXL;
+        @extend .card-title;
+        color: $purple;
+    }
+
+    p {
+        font-size: $textoL;
+        @extend .card-text;
+        color: $colorletraL;
+
+    }
+
+    .a {
+        border: $bordeBoton;
+        @extend .card-title;
+    }
+}
+
+
+
+.sass-card{
+    background-color: $fondoTarjeta;
+}
+
+.btn-primary {
+    background-color: $purple ;
+    border: $bordeBoton;
+}
+
+//patrón de color//
+$purple: #cf649a;
+
+//Modificación variable bootstrap//
+$primary: $purple;
+
+
+//profe se que el color del boton no es purple, pero no se que pasa que estuve todo un dia colocarle el color que se nos dijo pero no lo logre, mire la clase mas de 10 veces y no se que hacia mal, y no intente hablarle porque no sabia si me iba a responder por slack, asi que le escoje un color que pense que seria mas similar//
